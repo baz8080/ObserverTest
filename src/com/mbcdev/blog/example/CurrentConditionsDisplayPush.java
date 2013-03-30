@@ -4,11 +4,8 @@ import com.mbcdev.blog.patterns.Observable;
 import com.mbcdev.blog.patterns.Observer;
 
 /**
- * Created with IntelliJ IDEA.
- * User: barry
- * Date: 30/03/2013
- * Time: 00:06
- * To change this template use File | Settings | File Templates.
+ * This class uses the push method of observing by using the data supplied by the Observable when it enters
+ * its {@link com.mbcdev.blog.patterns.Observable#notifyObservers() notifyObservers()} method.
  */
 public class CurrentConditionsDisplayPush implements Observer<WeatherData, WeatherMeasurements>, DisplayElement {
     WeatherMeasurements weatherMeasurements;
@@ -23,7 +20,7 @@ public class CurrentConditionsDisplayPush implements Observer<WeatherData, Weath
     }
 
     @Override
-    public void update(WeatherData observer, WeatherMeasurements data) {
+    public void update(WeatherData observable, WeatherMeasurements data) {
         this.weatherMeasurements = data;
         display();
     }

@@ -56,6 +56,11 @@ import java.util.List;
  * empty. Two observers are considered the same if and only if the
  * <tt>equals</tt> method returns true for them.
  *
+ * This class has been modified from the original by mbcdev.com to do a
+ * number of things like remove the use of the deprecated Vector class
+ * and to extract an interface for Observer and provide this as a default
+ * concrete class.
+ *
  * @author  Chris Warth
  * @see     java.util.Observable#notifyObservers()
  * @see     java.util.Observable#notifyObservers(java.lang.Object)
@@ -124,6 +129,7 @@ public class ChangeAwareObservable implements Observable {
         }
 
         for (Observer observerLocal: observersLocal) {
+            //TODO unchecked call to raw type
             observerLocal.update(this, arg);
         }
     }

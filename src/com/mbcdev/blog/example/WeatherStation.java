@@ -1,11 +1,7 @@
 package com.mbcdev.blog.example;
 
 /**
- * Created with IntelliJ IDEA.
- * User: barry
- * Date: 30/03/2013
- * Time: 00:02
- * To change this template use File | Settings | File Templates.
+ * A driver class to demonstrate both the push and pull methods of the Observer pattern.
  */
 public class WeatherStation {
 

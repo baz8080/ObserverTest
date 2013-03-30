@@ -1,11 +1,7 @@
 package com.mbcdev.blog.example;
 
 /**
- * Created with IntelliJ IDEA.
- * User: barry
- * Date: 29/03/2013
- * Time: 23:39
- * To change this template use File | Settings | File Templates.
+ * Simple bean class for basic weather measurements
  */
 public class WeatherMeasurements {
     private float temperature;

@@ -39,9 +39,8 @@ public interface Observer<T, S> {
      * <code>notifyObservers</code> method to have all the object's
      * observers notified of the change.
      *
-     * @param   observer     the observable object.
+     * @param   observable     the observable object.
      * @param   data   an argument passed to the <code>notifyObservers</code>
-     *                 method.
      */
-    void update(T observer, S data);
+    void update(T observable, S data);
 }

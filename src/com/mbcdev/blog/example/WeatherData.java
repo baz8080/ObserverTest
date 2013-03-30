@@ -3,16 +3,8 @@ package com.mbcdev.blog.example;
 import com.mbcdev.blog.patterns.ChangeAwareObservable;
 
 /**
- * Created with IntelliJ IDEA.
- * User: barry
- * Date: 29/03/2013
- * Time: 23:32
- *
  * WeatherData class from Head First Design Patterns reworked to use the new
  * Observable classes.
- *
- * Uses the pull method to notify observers
- *
  */
 public class WeatherData extends ChangeAwareObservable {
 
